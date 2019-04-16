@@ -21,3 +21,5 @@ Simple edit the .config file located with the executable and use Y/N to manipula
   </appSettings>
 </configuration>
 ```
+Since this is a console application you can use Windows Task Scheduler to run this in the backgroud on a schedule of your choosing.
+Use your radios CPS to import and write to your radio.
