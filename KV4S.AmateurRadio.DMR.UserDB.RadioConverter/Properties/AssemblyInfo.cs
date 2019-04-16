@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KV4S.AR.DMR.IDDB")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("KV4S.AmateurRadio.DMR.UserDB.RadioConverter")]
+[assembly: AssemblyDescription("Application to download the DMR User Database and Convert it to a CSV file for import into a DMR Radio.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KV4S.AR.DMR.IDDB")]
+[assembly: AssemblyCompany("KV4S")]
+[assembly: AssemblyProduct("UserDB.RadioConverter")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
