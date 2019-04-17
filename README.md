@@ -1,7 +1,7 @@
 # Latest Version 1.0.1
 https://github.com/Russell-KV4S/DMR.UserDB.RadioConverter/releases/download/1.0.1/UserDB.RadioConverter.zip
 
-# Currently, the applicaiton supports the AnyTone, Radioddity GD-77 (unfiltered results), and TYT UV Model Radios.
+Currently, the applicaiton supports the AnyTone, Radioddity GD-77 (unfiltered results), and TYT UV Model Radios.
 
 # DMR.UserDB.RadioConverter
 Application to download the DMR User Database from RadioID.net and Convert it to a CSV file for import into a DMR Radio.
