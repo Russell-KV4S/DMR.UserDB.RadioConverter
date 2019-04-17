@@ -1,3 +1,6 @@
+# Latest Version 1.0.1
+https://github.com/Russell-KV4S/DMR.UserDB.RadioConverter/releases/download/1.0.1/UserDB.RadioConverter.zip
+
 # DMR.UserDB.RadioConverter
 Application to download the DMR User Database and Convert it to a CSV file for import into a DMR Radio.
 
