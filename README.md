@@ -18,9 +18,13 @@ Simple edit the .config file located with the executable and use Y/N to manipula
     </startup>
   <appSettings>
     <add key="URL" value="https://www.radioid.net/static/users.json"/>
+    <!--Set this to "Y" if you are scheduling this to run and don't need the console window to stay open.-->
+    <add key="Unattended" value="N"/>
     <!--Y/N value only-->
     <add key="AnyTone" value="Y"/>
     <add key="TYT-UV" value="Y"/>
+    <!--Manually filter your csv to just under 10k until I or someone builds something for filtering.-->
+    <add key="GD-77" value="Y"/>
   </appSettings>
 </configuration>
 ```
