@@ -41,6 +41,11 @@ namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
                         Console.WriteLine("Begin writing TYT-UV CSV file, Please Stand by.....");
                         SaveTYTUVCSV();
                     }
+                    if (ConfigurationManager.AppSettings["GD-77"] == "Y")
+                    {
+                        Console.WriteLine("Begin writing GD-77 CSV file, Please Stand by.....");
+                        SaveGD77CSV();
+                    }
                 }
             }
             catch (Exception ex)
@@ -113,6 +118,37 @@ namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
                 data = string.Concat(data, u.state, ",");
                 data = string.Concat(data, u.country, ",");
                 sw.WriteLine(string.Concat(data, ",,,,,"));
+            }
+            sw.Close();
+            fs.Close();
+            Console.WriteLine(" ");
+            Console.WriteLine("Converted CSV file located here: " + csvFile);
+            Console.WriteLine(" ");
+        }
+
+        public static void SaveGD77CSV()
+        {
+            string csvFile = Environment.CurrentDirectory + @"\GD-77_Users.csv";
+            FileInfo fi = new FileInfo(csvFile);
+            if (!fi.Directory.Exists)
+            {
+                fi.Directory.Create();
+            }
+            FileStream fs = new FileStream(csvFile, FileMode.Create, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
+            string data = "";
+            sw.WriteLine("Radio ID,Callsign,Name,NickName,City,State,Country,Remarks<br/>");
+            foreach (User u in ul.users)
+            {
+                data = string.Concat(u.radio_id, ",");
+                data = string.Concat(data, u.callsign, ",");
+                string[] strArrays = new string[] { data, u.name, " ", u.surname, "," };
+                data = string.Concat(strArrays);
+                data = string.Concat(data, ",");
+                data = string.Concat(data, u.city, ",");
+                data = string.Concat(data, u.state, ",");
+                data = string.Concat(data, u.country, ",");
+                sw.WriteLine(string.Concat(data, "<br/>"));
             }
             sw.Close();
             fs.Close();
