@@ -55,8 +55,11 @@ namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
             }
             finally
             {
-                Console.WriteLine("Press any key on your keyboard to quit...");
-                Console.ReadKey();
+                if (ConfigurationManager.AppSettings["Unattended"] == "N")
+                {
+                    Console.WriteLine("Press any key on your keyboard to quit...");
+                    Console.ReadKey();
+                }
             }
         }
 
