@@ -1,12 +1,12 @@
 # Latest Version 1.0.1
 https://github.com/Russell-KV4S/DMR.UserDB.RadioConverter/releases/download/1.0.1/UserDB.RadioConverter.zip
 
+Currently, the applicaiton supports the AnyTone, Radioddity GD-77 (unfiltered results), and TYT UV Model Radios.
+
 # DMR.UserDB.RadioConverter
-Application to download the DMR User Database and Convert it to a CSV file for import into a DMR Radio.
+Application to download the DMR User Database from RadioID.net and Convert it to a CSV file for import into a DMR Radio.
 
-Currenly the Applicaiton supports the AnyTone and TYT UV Model Radios.
-
-Contact me if you would like to add more and have the file specs or Git and create your own and merge them back in.
+Contact me if you would like to add more and have the file specs or use Git and create your own and merge them back in.
 
 Other than simply executing the Application you can control what CSV files are created for the type(s) of radio you have.
 Simple edit the .config file located with the executable and use Y/N to manipulate the application. 
@@ -18,9 +18,13 @@ Simple edit the .config file located with the executable and use Y/N to manipula
     </startup>
   <appSettings>
     <add key="URL" value="https://www.radioid.net/static/users.json"/>
+    <!--Set this to "Y" if you are scheduling this to run and don't need the console window to stay open.-->
+    <add key="Unattended" value="N"/>
     <!--Y/N value only-->
     <add key="AnyTone" value="Y"/>
     <add key="TYT-UV" value="Y"/>
+    <!--Manually filter your csv to just under 10k until I or someone builds something for filtering.-->
+    <add key="GD-77" value="Y"/>
   </appSettings>
 </configuration>
 ```
