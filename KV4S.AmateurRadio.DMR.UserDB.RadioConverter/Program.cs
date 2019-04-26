@@ -74,7 +74,7 @@ namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
             FileStream fs = new FileStream(csvFile, FileMode.Create, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
             string data = "";
-            sw.WriteLine("Radio,Radio ID,Callsign,Name,City,State,Country,Remarks,Call Type,Call Alert");
+            sw.WriteLine("No.,Radio ID,Callsign,Name,City,State,Country,Remarks,Call Type,Call Alert");
             int i = 1;
             foreach (User u in ul.users)
             {
