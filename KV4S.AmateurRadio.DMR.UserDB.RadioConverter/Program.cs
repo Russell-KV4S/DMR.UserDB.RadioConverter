@@ -81,7 +81,7 @@ namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
                 data = string.Concat(i, ",");
                 data = string.Concat(data, u.radio_id, ",");
                 data = string.Concat(data, u.callsign, ",");
-                string[] strArrays = new string[] { data, u.name, " ", u.surname, "," };
+                string[] strArrays = new string[] { data, u.fname, " ", u.surname, "," };
                 data = string.Concat(strArrays);
                 data = string.Concat(data, u.city, ",");
                 data = string.Concat(data, u.state, ",");
@@ -114,7 +114,7 @@ namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
             {
                 data = string.Concat(u.radio_id, ",");
                 data = string.Concat(data, u.callsign, ",");
-                string[] strArrays = new string[] { data, u.name, " ", u.surname, "," };
+                string[] strArrays = new string[] { data, u.fname, " ", u.surname, "," };
                 data = string.Concat(strArrays);
                 data = string.Concat(data, ",");
                 data = string.Concat(data, u.city, ",");
@@ -145,7 +145,7 @@ namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
             {
                 data = string.Concat(u.radio_id, ",");
                 data = string.Concat(data, u.callsign, ",");
-                string[] strArrays = new string[] { data, u.name, " ", u.surname, "," };
+                string[] strArrays = new string[] { data, u.fname, " ", u.surname, "," };
                 data = string.Concat(strArrays);
                 data = string.Concat(data, ",");
                 data = string.Concat(data, u.city, ",");

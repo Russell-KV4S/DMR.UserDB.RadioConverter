@@ -27,7 +27,7 @@ namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
             set;
         }
 
-        public string name
+        public string fname
         {
             get;
             set;
