@@ -17,7 +17,7 @@ Simple edit the .config file located with the executable and use Y/N to manipula
         <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
     </startup>
   <appSettings>
-    <add key="URL" value="https://www.radioid.net/static/users.json"/>
+    <add key="URL" value="https://database.radioid.net/static/users.json"/>
     <!--Set this to "Y" if you are scheduling this to run and don't need the console window to stay open.-->
     <add key="Unattended" value="N"/>
     <!--Y/N value only-->
