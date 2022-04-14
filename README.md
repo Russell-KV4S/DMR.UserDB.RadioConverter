@@ -1,7 +1,9 @@
-# Latest Version 1.0.2
-https://github.com/Russell-KV4S/DMR.UserDB.RadioConverter/releases/download/1.0.2/UserDB.RadioConverter.zip
+# Latest Version 1.0.3
+https://github.com/Russell-KV4S/DMR.UserDB.RadioConverter/releases/download/v1.0.3/UserDB.RadioConverter.zip
 
 Currently, the applicaiton supports the AnyTone, Radioddity GD-77 (unfiltered results), and TYT UV Model Radios.
+
+Runs on .Net Framework 4.8 install here: https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
 
 # DMR.UserDB.RadioConverter
 Application to download the DMR User Database from RadioID.net and Convert it to a CSV file for import into a DMR Radio.
