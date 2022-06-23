@@ -1,5 +1,5 @@
-# Latest Version 1.0.3
-https://github.com/Russell-KV4S/DMR.UserDB.RadioConverter/releases/download/v1.0.3/UserDB.RadioConverter.zip
+# Latest Version 1.0.4
+https://github.com/Russell-KV4S/DMR.UserDB.RadioConverter/releases/download/v1.0.4/UserDB.RadioConverter.zip
 
 Currently, the applicaiton supports the AnyTone, Radioddity GD-77 (unfiltered results), and TYT UV Model Radios.
 
