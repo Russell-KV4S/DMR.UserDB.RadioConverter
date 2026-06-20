@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter;
 
-namespace KV4S.AmateurRadio.DMR.UserDB.RadioConverter
+class UserList
 {
-    [Serializable]
-    class UserList
-    {
-        public List<User> users;
-        public UserList()
-        {
-        }
-    }
+    public List<User> users { get; set; } = [];
 }
