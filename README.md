@@ -22,12 +22,12 @@ Edit the `appsettings.json` file located with the executable and use `Y`/`N` val
 }
 ```
 
-To build the application locally:
+From the repository root, build the application locally with:
 ```
 dotnet build UserDB.RadioConverter.sln
 ```
 
-To run the application:
+From the repository root, run the application with:
 ```
 dotnet run --project KV4S.AmateurRadio.DMR.UserDB.RadioConverter/UserDB.RadioConverter.csproj
 ```
